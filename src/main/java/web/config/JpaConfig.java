@@ -59,7 +59,7 @@ public class JpaConfig {
 
     private Properties additionalProperties() {
         Properties props = new Properties();
-        props.put("hibernate.dialect", env.getProperty("hibernate.dialect"));
+        //props.put("hibernate.dialect", env.getProperty("hibernate.dialect"));
         props.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
         props.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
         return props;
